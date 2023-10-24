@@ -19,3 +19,24 @@ find ({name: "moses"})
 findbyid({_id})
 findbyidandupdate({_id:id}, req.body, {new: true, run vali})
 findbyidanddelete({_id: id})
+
+
+
+
+
+installation and set up express app
+mongoose db connection
+
+build schema - models
+
+title {
+    required, string, trim
+}
+
+description{
+    required string trim
+}
+model and exports
+
+
+need to set uo our controllers functions

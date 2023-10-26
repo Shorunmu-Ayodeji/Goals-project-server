@@ -48,7 +48,7 @@ const deleteGoal = async (req,res) => {
    const {goalId} = req.params
    try {
     const goal = await Goals.findByIdAndDelete({_id: goalId });
-    res.status(200).json({sucess: true, goal})
+    res.status(200).json({success: true, goal})
    } catch (error) {
     res.json(error)
     console.log(error)

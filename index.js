@@ -2,11 +2,13 @@ require('dotenv').config()
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
+const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 const goalRouter = require('./routes/goalRouter')
 
 //midlle ware
 app.use(express.json())
+app.use(cors());
 
 //routes
 app.use('/api/goals', goalRouter)
